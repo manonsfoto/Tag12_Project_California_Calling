@@ -7,6 +7,11 @@
   src: url(../fonts/WorkSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: "lora";
+  src: url(../fonts/Lora-SemiBold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +35,7 @@ header,
 aside,
 .section-storywrap,
 .section-goldenbear,
-.section-rosebear {
+.section-rosebear, footer {
   padding: 0 10.9rem;
 }
 a {
@@ -64,12 +69,15 @@ h2 {
   line-height: 90%;
 }
 
-/* .outline {
-  text-align: center;
-  -webkit-text-stroke: 0.01px #FFF;
+.outline {
   color: #000;
-  font-weight: 700;
-} */
+  text-shadow: -0.1rem -0.1rem 0 #FFF, 0.1rem -0.1rem 0 #FFF, 0.1rem 0.1rem 0 #FFF, 0.1rem 0.1rem 0 #FFF;
+}
+
+.outline-year {
+  -webkit-text-stroke: 0.1rem #000;
+}
+
 h3 {
   font-size: 2.8rem;
   font-family: "inter-regular";
@@ -86,6 +94,12 @@ h5 {
 p {
   font-family: "worksans-regular";
   font-size: 1.4rem;
+}
+
+.footer-animation p {
+  font-family: "lora";
+  font-size: 8.8rem;
+  color: #000;
 }
 
 /* ====== Styling Header ===== */
@@ -108,11 +122,17 @@ aside {
 }
 
 .rsvp-button {
+  font-family: "worksans-regular";
+  font-size: 2rem;
   border: 0.1rem solid #aaa;
   padding: 1.2rem 3.2rem;
 }
 
 /* ====== Styling Main ===== */
+
+main {
+  overflow: hidden;
+}
 .section-storywrap {
   padding-top: 10rem;
 }
@@ -268,7 +288,7 @@ aside {
   }
 }
 .section-rosebear {
-  height: 200rem;
+  height: 130rem;
 }
 .img-11 {
   width: 73.1rem;
@@ -283,4 +303,67 @@ aside {
   top: 34rem;
   left: 6rem;
   z-index: 2;
+}
+
+/* ====== Styling Footer ===== */
+
+footer {
+  height: 65rem;
+  overflow: hidden;
+}
+
+.footer-text {
+  padding-top: 10rem;
+  width: 53rem;
+}
+
+.footer-text h3 {
+  line-height: 4.6rem;
+  margin: 2rem 0;
+}
+
+.social-media img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer-img {
+  width: 100%;
+  justify-content: space-between;
+  padding: 10rem 0 7rem 0;
+}
+
+.social-media-wrapper {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo img {
+  width: 5rem;
+}
+
+.footer-animation {
+  background-color: #FFF;
+  position: relative;
+  transform: rotate(45deg);
+  top: -35rem;
+  left: 65rem;
+}
+
+.footer-animation p {
+  animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-35rem);
+  }
+}
+
+.outline-year {
+  color: #FFF;
 }
