@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "";
+  src: url();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "karla-regular", "Courier New", Courier, monospace;
+}
+body {
+  width: 1440px;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto;
+}
