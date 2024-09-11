@@ -16,19 +16,26 @@
 body {
   width: 1440px;
   margin: 0 auto;
+  background-color: #fff;
+  color: #000;
+}
+.black-theme {
   background-color: #000;
   color: #fff;
-  padding: 0 10.9rem;
 }
-
-
 html {
   font-size: 62.5%;
 }
-
+header,
+aside,
+.section-storywrap,
+.section-goldenbear,
+.section-rosebear {
+  padding: 0 10.9rem;
+}
 a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 
 .flex {
@@ -40,8 +47,7 @@ a {
 
 /* h1: header big text
 h2: rest big text
-h3: main article text
-h4: rsvp 
+h3: main article text 
 h5: header small text*/
 
 h1 {
@@ -64,7 +70,12 @@ h2 {
   color: #000;
   font-weight: 700;
 } */
-
+h3 {
+  font-size: 2.8rem;
+  font-family: "inter-regular";
+  font-weight: bold;
+  line-height: 3.2rem;
+}
 h5 {
   font-size: 2rem;
   font-weight: 400;
@@ -77,18 +88,13 @@ p {
   font-size: 1.4rem;
 }
 
-.white-theme {
-  background-color: #fff;
-  color: #000;
-}
-
 /* ====== Styling Header ===== */
 
 header {
   flex-direction: column;
   text-align: center;
   gap: 5rem;
-  height: 100vh;
+  height: 75rem;
 }
 
 .bar {
@@ -102,12 +108,14 @@ aside {
 }
 
 .rsvp-button {
-  border: 0.1rem solid #AAA;
+  border: 0.1rem solid #aaa;
   padding: 1.2rem 3.2rem;
 }
 
 /* ====== Styling Main ===== */
-
+.section-storywrap {
+  padding-top: 10rem;
+}
 .section-h2 {
   margin: 10rem 0;
 }
@@ -123,7 +131,7 @@ aside {
 }
 
 .section-action {
-  height: 230vh;
+  height: 188rem;
 }
 
 .section-container img {
@@ -178,7 +186,7 @@ aside {
   width: 27.4rem;
   height: 18.2rem;
   top: 2rem;
-  left: 95rem;
+  left: 116rem;
 }
 
 .img-4 {
@@ -207,4 +215,72 @@ aside {
   height: 29.2rem;
   top: -13rem;
   left: 55rem;
+}
+
+.section-goldenbear {
+  padding-top: 16.7rem;
+  height: 115rem;
+}
+.section-goldenbear h2,
+.section-rosebear h2 {
+  width: 29.6rem;
+}
+.text-box-3 {
+  width: 53rem;
+  align-self: flex-start;
+}
+.text-box-3 p {
+  padding-top: 1.5rem;
+}
+.text-box-wrapper {
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.img-8 {
+  width: 73.1rem;
+  height: 73.1rem;
+  top: 16rem;
+  left: 0;
+}
+.img-9 {
+  width: 36.6rem;
+  height: 47.3rem;
+  top: -40rem;
+  left: 64rem;
+}
+.animation-circle {
+  position: relative;
+  top: -17rem;
+  left: 122rem;
+  width: 41.1rem;
+  height: 41.1rem;
+}
+.animation-circle img {
+  width: 100%;
+  animation: rotate 5s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.section-rosebear {
+  height: 200rem;
+}
+.img-11 {
+  width: 73.1rem;
+  height: 73.1rem;
+  top: -30rem;
+  left: 37rem;
+  z-index: 1;
+}
+.img-10 {
+  width: 36.6rem;
+  height: 47.3rem;
+  top: 34rem;
+  left: 6rem;
+  z-index: 2;
 }
