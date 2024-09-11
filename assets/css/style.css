@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "inter-regular";
+  src: url(../fonts/Inter_24pt-Regular.ttf);
+}
+@font-face {
+  font-family: "worksans-regular";
+  src: url(../fonts/WorkSans-Regular.ttf);
 }
 
 * {
@@ -8,11 +12,41 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: "karla-regular", "Courier New", Courier, monospace;
-}
+
 body {
   width: 1440px;
-  padding: 1rem 1rem 0 1rem;
   margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+}
+
+/* h1: header big text
+h2: rest big text
+h3: main article text
+h4: rsvp 
+h5: header small text*/
+.white-theme {
+  background-color: #fff;
+  color: #000;
+}
+header {
+  flex-direction: column;
+  text-align: center;
+  gap: 5rem;
+  height: 100vh;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.bar {
+  background-color: #fff;
+  height: 10rem;
+  width: 1px;
+}
+h1 {
+  font-family: "inter-regular";
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 80%;
 }
